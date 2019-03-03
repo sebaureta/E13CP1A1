@@ -1,0 +1,18 @@
+<head></head>
+
+<body>
+
+
+    <% @sales.each do |sale| %>
+    <p>Codigo: <%= sale.cod%>
+    Detalle:<%= sale.detail%>
+    Categoria: <%= sale.category%>
+    Valor: <%= sale.value%>
+    Descuente:  <%= sale.discount%>
+    Exento de IVA:<%= sale.tax %>
+    Total:<%= sale.total%> 
+    <% end %> </p>
+    
+
+
+</body>
